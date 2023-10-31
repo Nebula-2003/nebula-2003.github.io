@@ -20,7 +20,7 @@
 
     #mainDiv {
       width: 800px;
-      margin: 100px auto;
+      /* margin: 100px auto; */
       text-align: center;
       display: flex;
       flex-direction: column;
@@ -91,12 +91,12 @@
     <div class="form-container-cust" id="child1">
       <form>
         <div class="form-group-cust">
-          <input type="text" id="api-key" placeholder="Add PK key here" class="text-box-cust">
-          <button id="submit-api-key" type="button">Click me to add pk key</button>
+          <input type="text" id="api-key" placeholder="Publishable Key" class="text-box-cust">
+          <button id="submit-api-key" type="button">Add Key</button>
         </div>
         <div class="form-group-cust">
-          <input type="text" id="client-secret-input" placeholder="Add secret key here" class="text-box-cust">
-          <button id="myButton" type="button">Click me</button>
+          <input type="text" id="client-secret-input" placeholder="Payment Intent Client Secret" class="text-box-cust">
+          <button id="myButton" type="button">Initiate Payment</button>
         </div>
       </form>
     </div>

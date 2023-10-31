@@ -2,8 +2,13 @@ let stripe;
 let apiKey;
 document.querySelector("#submit-api-key").addEventListener("click", function () {
     const apiKeyInput = document.getElementById("api-key");
+    const button = document.getElementById("submit-api-key");
     apiKey = apiKeyInput.value;
     if (apiKey) {
+        button.style.backgroundColor = "#4CAF50"; // New background color
+        setTimeout(function () {
+            button.style.backgroundColor = "#6772e5"; // Restore the original background color
+        }, 500); // 500 milliseconds (adjust as needed)
         stripe = Stripe(apiKey);
     } else {
         showMessage("Please enter a valid API key.");
